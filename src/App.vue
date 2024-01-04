@@ -7,6 +7,14 @@
       <input id="barra" type="text" v-model="terminoBusqueda">
     </div>
 
+
+    <button id="jugar" type="button" class="button1"><router-link to="/" class="text-black">play</router-link></button>
+
+
+
+
+
+
     <div class="abajoc">
       <div id="ctarjetas" v-for="(tarjetas, i) in filtroTarjeta" :key="i">
         <img id="imagentarjeta" :src="tarjetas.img" alt="">
@@ -19,7 +27,6 @@
         }) }}
         </h1>
 
-        <button @click="añadirP(i)" id="carritob">Añadir a la tabla</button>
 
       </div>
     </div>
@@ -52,6 +59,10 @@ const tarjeta = ref([
   { id: 11, nombre: "Donkey kong country tropical freeze", precio: 265900, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpkGslg0Ggru4ytGSB9YhWCnZAzvAkKyhCXqlxwgsdyERodMBFxaJNZyj4k1DEfgZO3ic&usqp=CAU" },
   { id: 12, nombre: "Animal Crossing", precio: 265900, img: "https://media.cdn.videotesty.pl/media/cache/f5/42/f54260dfcf09ca0fb151337f5f0e5e80.jpg" },
 ])
+
+
+
+
 </script>
 
 <style scoped>
@@ -80,5 +91,12 @@ const tarjeta = ref([
   height: 25px;
   border-radius: 20px;
   margin-top: 25px;
+}
+
+#abajoc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 </style>
