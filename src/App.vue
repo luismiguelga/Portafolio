@@ -9,7 +9,7 @@
 
 
     <button id="jugar" type="button" class="button1"><router-link to="/" class="text-black">play</router-link></button>
-
+    <button id="jugar" type="button" class="button1"><router-link to="/home" class="text-black">tienda</router-link></button>
 
 
 
