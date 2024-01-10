@@ -78,15 +78,19 @@
 
       </div>
     </div>
-    <router-link class="link" to="/">
-      <my-button><i class="fa-solid fa-house-user"></i> Volver</my-button>
-    </router-link>
+
+
 
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from "vue";
+import { useQuasar } from "quasar";
+
+
+const $q = useQuasar();
+
 
 // Barra busqueda
 const terminoBusqueda = ref('');
