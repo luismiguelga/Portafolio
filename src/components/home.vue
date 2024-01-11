@@ -10,6 +10,8 @@
     <div class="info">
       <h1>Hola soy Luis </h1>
       <img src="" alt="">
+
+
     </div>
 
     <div class="abajo">
@@ -19,8 +21,14 @@
           <h1 id="info">{{ tarjetas.nombre }}</h1>
 
 
-          <router-link class="link" to="/tienda"><q-btn id="btnmenu"><i class="fa-solid fa-house-user"></i>
-              Menu</q-btn></router-link>
+
+          <router-link class="link" :to="'/' + tarjetas.nombre.toLowerCase().replace(/ /g, '')">
+            <q-btn id="btnmenu">
+              <i class="fa-solid fa-house-user"></i>
+              Ir a la pagina
+            </q-btn>
+          </router-link>
+
 
           <router-view></router-view>
 
@@ -47,9 +55,8 @@ const filtroTarjeta = computed(() => {
 
 const tarjeta = ref([
   { id: 1, nombre: "Tienda", img: "https://th.bing.com/th/id/OIP.kF-eh3DgHYZjPNF_tZy-bAHaGG?w=510&h=420&rs=1&pid=ImgDetMain" },
-  { id: 2, nombre: "Pokedex", precio: 408900, img: "https://www.nda-toys.com/images/banner/pokemon-wholesale-v.jpg" },
-  { id: 3, nombre: "Terminal de buses", precio: 279000, img: "https://image.freepik.com/vector-gratis/estacion-autobuses-ciudad-moderna_82689-97.jpg" },
-
+  { id: 2, nombre: "Pokedex", img: "https://www.nda-toys.com/images/banner/pokemon-wholesale-v.jpg" },
+  { id: 3, nombre: "Terminal de buses", img: "https://image.freepik.com/vector-gratis/estacion-autobuses-ciudad-moderna_82689-97.jpg" },
 ])
 
 
@@ -71,7 +78,7 @@ const tarjeta = ref([
   background-color: white;
   gap: 30px;
   margin: 20px;
-  border-radius: 40px;
+  border-radius: 30px;
   display: flex;
 }
 

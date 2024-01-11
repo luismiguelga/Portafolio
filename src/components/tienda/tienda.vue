@@ -157,6 +157,13 @@ const tarjeta = ref([
 <style scoped>
 #body {
   height: 100vh;
+  margin: 0%;
+  /* background-color: rgb(252, 53, 53); */
+  background-image: url(./img/myl.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 100px 170px; */
+  background-size: 100% 100%;  
 }
 
 #total {
