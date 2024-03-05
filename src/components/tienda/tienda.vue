@@ -3,7 +3,7 @@
   <div id="body">
     <div id="arriba">
       <h1 id="titulo">Nintendo </h1>
-      <img id="fotol" src="./img/logo.png" alt="">
+      <img id="fotol" src="./" alt="">
       <h1 id="Estas">¿Estas buscando algo en especifico?</h1>
       <input id="barra" type="text" v-model="terminoBusqueda">
       <div id="boto">
