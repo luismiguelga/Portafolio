@@ -1,9 +1,8 @@
 <template>
     <div class="og">
         <div class="info1">
-            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; margin-top: 30px;">¡Hola mundo
-                del desarrollo!</h1>
-            <p class="p" style="width: 400px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 20px;">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; margin-top: 30px; font-weight: bold;">¡Hola mundo del desarrollo!</h1>
+            <p class="p" style="width: 400px; font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 15px; ">
                 Mi código es como el buen vino, mejora con el tiempo. A diferencia del café, que solo mejora mi código.
                 Apasionado desarrollador centrado en el frontend y el backend con una gran creatividad y
                 un amor profundo por crear experiencias de usuario cautivadoras. Me esfuerzo por mejorar
@@ -25,41 +24,58 @@
                 ¡Gracias por sumergirte en mi mundo de desarrollo! Estoy emocionado por la oportunidad de contribuir con
                 mis habilidades en futuros proyectos y llevar la magia del frontend a nuevas alturas. -->
             </p>
-            <img src="../assets/Foto.png" alt=""
-                style="width: 180px; height: 180px; border-radius: 80%; margin-top: 20px;">
-            <h2 style="position: relative; top: 15px;">@Social</h2>
-            <div class="span" style="margin-top: 20px;">
+            <img src="../assets/Foto.png" alt="" style="width: 180px; height: 180px; border-radius: 80%; margin-top: 20px;">
+            <h2 style="position: relative; top: 15px;">Algunas redes:</h2>
+            <div class="span" style="margin-top: 20px; display: flex; gap: 30px; padding: 5px;">
 
                 <span class="redes" style="width: 120px; ">
-                    <a href="https://www.instagram.com/luismigalvis99/"> <i class="fab fa-instagram"
+                    <a href="https://www.instagram.com/luismigalvis99/" style="display: flex; gap: 5px; text-decoration: none;"> <i class="fab fa-instagram"
                             style="font-size: 25px;"></i> instagram</a>
                 </span>
 
                 <span class="redes" style="width: 110px;">
-                    <a href="https://www.instagram.com/luismigalvis99/"> <i class="fab fa-twitter"
+                    <a href="https://www.instagram.com/luismigalvis99/"  style="display: flex; gap: 5px; text-decoration: none;"> <i class="fab fa-twitter"
                             style="font-size: 25px;"></i>twitter </a>
                 </span>
 
                 <span class="redes" style="width: 110px;">
-                    <a href="https://github.com/luismiguelga"> <i class="fab fa-brands fa-github"
+                    <a href="https://github.com/luismiguelga" style="display: flex; gap: 5px; text-decoration: none;" > <i class="fab fa-brands fa-github"
                             style="font-size: 25px;"></i>github </a>
                 </span>
 
-
-
             </div>
         </div>
-        <div class="card">
+        <div class="info2">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 27px; margin-top: 30px; font-weight: bold;">Aqui hay alguno de mis proyectos:</h1>
+            <div class="frameworks" style=" margin-top: 30px;  display: flex; gap: 50px;">
+                <span class="fr">
+                  <a href=""><i class="fab fa-brands fa-vuejs" style="color: green;"></i></a>
+                  <router-link :to="'./Portafolio'">Porta</router-link>
+                </span>
+
+                
+                <span class="fr">
+                Angular
+
+                </span>
+ 
+
+            </div>
+
+        </div>
+     
+    </div>
+       <!-- <div class="card">
             <div class="card-inner">
                 <div class="card-front">
                     <p>Front Side</p>
+                    <button></button>
                 </div>
                 <div class="card-back">
                     <p>Back Side</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
 </template>
 
 
@@ -76,29 +92,22 @@ body {
 .og {
     display: flex;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 15px;
 
 }
 
 .info1 {
     box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
     border-radius: 10px;
-    background: linear-gradient(45deg, deepskyblue 0%, royalblue 100%);
+    background: linear-gradient(45deg, rgba(0, 191, 255, 0.507) 0%, royalblue 100%);
     height: 620px;
     width: 550px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+    border: 2px solid;
 }
-
-.span {
-    display: flex;
-    gap: 30px;
-    padding: 5px;
-}
-
 .redes {
     display: flex;
     align-items: center;
@@ -108,14 +117,34 @@ body {
     background-color: white;
     height: 50px;
 }
+.info2{
+    box-shadow: 0 10px 15px -3px rgba(33, 150, 243, .4), 0 4px 6px -4px rgba(33, 150, 243, .4);
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(0, 191, 255, 0.507) 0%, royalblue 100%);
+    height: 300px;
+    width: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+}
+
+
+.fr{
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
 
 
-
-
-.card {
+/* .card {
     width: 550px;
     height: 620px;
     perspective: 1000px;
@@ -130,7 +159,7 @@ body {
 }
 
 .card:hover .card-inner {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
 .card-front,
@@ -164,8 +193,8 @@ body {
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
     height: 620px;
     width: 550px;
-}
+} */
 </style>

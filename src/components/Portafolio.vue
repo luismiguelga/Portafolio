@@ -7,35 +7,25 @@
         <input id="barra" type="text" v-model="terminoBusqueda">
       </div>
   
-      <div class="info">
-        <h1>Hola soy Luis </h1>
-        <img src="" alt="">
-  
-  
-      </div>
-  
+
       <div class="abajo">
         <div class="abajoc">
           <div id="ctarjetas" v-for="(tarjetas, i) in filtroTarjeta" :key="i">
             <img id="imagentarjeta" :src="tarjetas.img" alt="">
             <h1 id="info">{{ tarjetas.nombre }}</h1>
-  
-  
-  
-            <router-link class="link" :to="'/' + tarjetas.nombre.toLowerCase().replace(/ /g, '')">
-              <q-btn id="btnmenu">
-                <i class="fa-solid fa-house-user"></i>
-                Ir a la pagina
-              </q-btn>
-            </router-link>
-  
-  
-            <router-view></router-view>
-  
-  
+            
+
+            <a :href="tarjetas.href" class="link">
+            <q-btn id="btnmenu">
+              <i class="fa-solid fa-house-user"></i>
+              Ir a la página
+            </q-btn>
+          </a>
+
+
+
+
           </div>
-  
-  
         </div>
       </div>
     </div>
@@ -54,8 +44,8 @@
   });
   
   const tarjeta = ref([
-    { id: 1, nombre: "Tienda", img: "https://th.bing.com/th/id/OIP.kF-eh3DgHYZjPNF_tZy-bAHaGG?w=510&h=420&rs=1&pid=ImgDetMain" },
-    { id: 2, nombre: "Pokedex", img: "https://www.nda-toys.com/images/banner/pokemon-wholesale-v.jpg" },
+    { id: 1, nombre: "Tienda", img: "https://th.bing.com/th/id/OIP.kF-eh3DgHYZjPNF_tZy-bAHaGG?w=510&h=420&rs=1&pid=ImgDetMain", href:"https://pokedex-2-hazel.vercel.app/" },
+    { id: 2, nombre: "Pokedex", img: "https://www.nda-toys.com/images/banner/pokemon-wholesale-v.jpg",  },
     { id: 3, nombre: "Terminal de buses", img: "https://image.freepik.com/vector-gratis/estacion-autobuses-ciudad-moderna_82689-97.jpg" },
   ])
   
