@@ -60,6 +60,12 @@
                 <h1 style="font-size: 25px;">Quieres saber mas sobre mi:</h1>
                 <q-btn class="boton" label="Ver" @click="showProfileDialog" style="margin: 10px;" />
                 <q-dialog class="cuadro" v-model="profileDialog">
+                    <span class="icons" style="display: flex; gap: 35px; ">
+                        <h1 style="font-size: 23px; margin-right: 5px ;  margin-bottom:10px ; font-weight: bold;">Mas
+                            cosas sobre mi </h1>
+                        <i class="fas fa-laptop" style=" margin-top:-4px; font-size: 35px;"></i>
+                    </span>
+
                     <p>
                         También poseo habilidades en el desarrollo de backend y la gestión de bases de datos, con
                         un toque de Python.
@@ -77,8 +83,12 @@
                         ¡Gracias por sumergirte en mi mundo de desarrollo! Estoy emocionado por la oportunidad de
                         contribuir con mis habilidades en futuros proyectos.
                     </p>
-
-                    <q-btn class="boton" label="👈" @click="closeProfileDialog" > </q-btn>
+                    <span class="icon" style="display: flex; gap: 34px;">
+                        <q-btn class="botonc" label="👈" @click="closeProfileDialog" style="margin-right: 30%;"></q-btn>
+                        <i class="fab fa-brands fa-vuejs" style="margin-top: -2px; color: green; font-size: 40px;"></i>
+                        <i class="fab fa-brands fa-js" style="margin-top: -2px; color: yellow; font-size: 40px;"></i>
+                        <i class="fab fa-brands fa-python" style="margin-top: -2px; color:darkblue; font-size: 40px;"></i>
+                    </span>
                 </q-dialog>
             </div>
         </div>
@@ -182,7 +192,14 @@ body {
 .cuadro {
     height: auto;
     width: 550px;
-    background-color: white;
+    background-image: repeating-linear-gradient(-45deg,
+            #3498db 0,
+            transparent 30px,
+            #2980b9 30px,
+            transparent 60px,
+            #3498db 120px,
+            transparent 240px);
+    background-color: #3498db;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -196,6 +213,7 @@ body {
     position: fixed;
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid;
 }
 
 .boton {
@@ -208,7 +226,7 @@ body {
     background-color: rgb(22, 209, 22);
     border: 3px solid rgb(254, 254, 254);
     border-radius: 10px;
-    padding: 0.1rem 1.8rem; 
+    padding: 0.1rem 1.8rem;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -236,6 +254,49 @@ body {
 .boton:hover::before {
     transform: translateX(0);
 }
+
+
+
+.botonc {
+    width: 90px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(111, 111, 111);
+    border: 3px solid rgb(254, 254, 254);
+    border-radius: 10px;
+    padding: 0.1rem 1.8rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+
+.botonc::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 30, 48);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.botonc:hover::before {
+    transform: translateX(0);
+}
+
+
 
 .fr {
     background-color: white;
