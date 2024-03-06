@@ -23,9 +23,9 @@
                 </span>
 
                 <span class="redes" style="width: 110px;">
-                    <a href="https://www.instagram.com/luismigalvis99/"
-                        style="display: flex; gap: 5px; text-decoration: none;"> <i class="fab fa-twitter"
-                            style="font-size: 25px;"></i>twitter </a>
+                    <a href="https://www.linkedin.com/in/luis-miguel-galvis-rodr%C3%ADguez-564049248/" style="display: flex; gap: 5px; text-decoration: none;"> 
+                        <i class=" fab fa-brands fa-linkedin" style="font-size: 25px; font-family:"></i>Linkedin
+                    </a>
                 </span>
 
                 <span class="redes" style="width: 110px;">
@@ -75,7 +75,8 @@
                         <br>
                         <br>
                         Aunque mi experiencia en Python y Angular es básica, siempre estoy emocionado por aprender y
-                        enfrentar nuevos desafíos. Mi enfoque en el frontend no solo se basa en la estética, sino en la creación
+                        enfrentar nuevos desafíos. Mi enfoque en el frontend no solo se basa en la estética, sino en la
+                        creación
                         de experiencias de usuario que cautiven y deleiten. Este portafolio es un vistazo a mi viaje de
                         desarrollo, destacando proyectos donde he aportado mi toque único y habilidades en el mundo del
                         diseño web.
