@@ -42,18 +42,21 @@
                 Aqui hay alguno de mis proyectos:</h1>
             <div class="frameworks" style=" margin-top: 30px;  display: flex; gap: 50px;">
                 <span class="fr">
-
                     <router-link :to="'./Vue'"
                         style="font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: black; text-decoration: none;">Portafolio
-                        vue</router-link>
-                    <a href=""><i class="fab fa-brands fa-vuejs" style="color: green; font-size: 55px;"></i></a>
+                        Vue</router-link>
+                    <router-link :to="'./Vue'" style="text-decoration: none;">
+                        <i class="fab fa-brands fa-vuejs" style="color: green; font-size: 55px;"></i>
+                    </router-link>
                 </span>
 
                 <span class="fr">
                     <router-link :to="'./Angular'"
                         style="font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: black; text-decoration: none;">Portafolio
                         Angular</router-link>
-                    <a href=""><i class="fab fa-brands fa-angular" style="color: red; font-size: 55px;"></i></a>
+                    <router-link :to="'./Angular'" style="text-decoration: none;">
+                        <i class="fab fa-brands fa-angular" style="color: red; font-size: 55px;"></i>
+                    </router-link>
                 </span>
             </div>
             <div class="info3">
@@ -67,13 +70,12 @@
                     </span>
 
                     <p>
-                        También poseo habilidades en el desarrollo de backend y la gestión de bases de datos, con
-                        un toque de Python.
+                        También poseo habilidades en el desarrollo de backend con nodejs y la gestión de bases de datos
+                        con Python para comunicarme con el gestor de la base de datos.
                         <br>
                         <br>
                         Aunque mi experiencia en Python y Angular es básica, siempre estoy emocionado por aprender y
-                        enfrentar
-                        nuevos desafíos. Mi enfoque en el frontend no solo se basa en la estética, sino en la creación
+                        enfrentar nuevos desafíos. Mi enfoque en el frontend no solo se basa en la estética, sino en la creación
                         de experiencias de usuario que cautiven y deleiten. Este portafolio es un vistazo a mi viaje de
                         desarrollo, destacando proyectos donde he aportado mi toque único y habilidades en el mundo del
                         diseño web.
@@ -87,7 +89,8 @@
                         <q-btn class="botonc" label="👈" @click="closeProfileDialog" style="margin-right: 30%;"></q-btn>
                         <i class="fab fa-brands fa-vuejs" style="margin-top: -2px; color: green; font-size: 40px;"></i>
                         <i class="fab fa-brands fa-js" style="margin-top: -2px; color: yellow; font-size: 40px;"></i>
-                        <i class="fab fa-brands fa-python" style="margin-top: -2px; color:darkblue; font-size: 40px;"></i>
+                        <i class="fab fa-brands fa-python"
+                            style="margin-top: -2px; color:darkblue; font-size: 40px;"></i>
                     </span>
                 </q-dialog>
             </div>
