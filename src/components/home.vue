@@ -23,7 +23,8 @@
                 </span>
 
                 <span class="redes" style="width: 110px;">
-                    <a href="https://www.linkedin.com/in/luis-miguel-galvis-rodr%C3%ADguez-564049248/" style="display: flex; gap: 5px; text-decoration: none;"> 
+                    <a href="https://www.linkedin.com/in/luis-miguel-galvis-rodr%C3%ADguez-564049248/"
+                        style="display: flex; gap: 5px; text-decoration: none;">
                         <i class=" fab fa-brands fa-linkedin" style="font-size: 25px; font-family:"></i>Linkedin
                     </a>
                 </span>
@@ -74,12 +75,11 @@
                         con Python para comunicarme con el gestor de la base de datos.
                         <br>
                         <br>
-                        Aunque mi experiencia en Python y Angular es básica, siempre estoy emocionado por aprender y
-                        enfrentar nuevos desafíos. Mi enfoque en el frontend no solo se basa en la estética, sino en la
-                        creación
-                        de experiencias de usuario que cautiven y deleiten. Este portafolio es un vistazo a mi viaje de
-                        desarrollo, destacando proyectos donde he aportado mi toque único y habilidades en el mundo del
-                        diseño web.
+
+                        Con sólidos conocimientos en JavaScript y destacada experiencia con frameworks como Vue.js, así
+                        como habilidades en programación orientada a objetos, me presento como un desarrollador
+                        versátil. Además, poseo experiencia en el manejo de bases de datos, incluyendo Oracle (SQL) y
+                        MongoDB, y habilidades en el manejo de datos mediante SQL.
                     </p>
                     <br>
                     <p>
@@ -212,7 +212,7 @@ body {
     gap: 30px;
     position: relative;
     left: 30%;
-    top: 100px;
+    top: 60px;
     z-index: 2;
     position: fixed;
     padding: 20px;
